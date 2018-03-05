@@ -9,3 +9,7 @@ gulp.task("default", function(){
     .pipe(tsProject())
     .js.pipe(gulp.dest("js"));
 });
+
+gulp.task("watch", ()=> {
+    gulp.watch('ts/*.ts', ["default"]);
+});
