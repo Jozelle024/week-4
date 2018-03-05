@@ -11,5 +11,5 @@ gulp.task("default", function(){
 });
 
 gulp.task("watch", ()=> {
-    gulp.watch('ts/*.ts', ["default"]);
+    gulp.watch('ts/*.ts', ["default"]); // execute task default
 });
