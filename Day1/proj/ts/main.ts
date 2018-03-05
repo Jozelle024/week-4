@@ -3,3 +3,10 @@ function ciao(nome: string){
 }
 
 ciao('Typescript');
+
+function somma(a:number, b:number){
+    const c = a + b;
+    console.log(c);
+}
+
+somma(1,2);
