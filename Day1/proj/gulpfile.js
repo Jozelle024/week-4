@@ -7,9 +7,10 @@ const tsProject = ts.createProject("tsconfig.json");
 gulp.task("default", function(){
     return tsProject.src()
     .pipe(tsProject())
-    .js.pipe(gulp.dest("js"));
+    .js.pipe(gulp.dest("js/*"));
 });
 
 gulp.task("watch", ()=> {
-    gulp.watch('ts/*.ts', ["default"]); // execute task default
+    gulp.watch('ts/*/*.ts', ["default"]); // execute task default
+    gulp.watch('ts/*.ts', ['default']);
 });
